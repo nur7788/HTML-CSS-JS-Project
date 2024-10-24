@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: hsl(240, 27%, 98%);
+        
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #7b5d5d;
+            color: #832828;
+        }
+
+
+
+         /* Styling for the search box */
+         .search-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        
+  .search-bar{
+	padding: 5px;
+    margin: 0;
+    background: #fbfbf9;
+    border-radius: 0%;
+    text-align: end;
+    
+}
+.search-bar h1{
+	font-family:sans-serif;
+	font-size:20px;
+	color:#5e1eb2;
+    
+	
+}
+
+
+.search-bar input{
+	width: 100px;
+    height: 40px;
+	outline: 2px;;
+	border:none;
+    color: #c12323ec;
+    background-color: #1b1d1f;
+}
+
+
+        
+    
+
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        header .logo h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+
+            color: #f6690c;
+            text-decoration: navy;
+            font-weight: bold;
+            box-shadow: inset;
+            text-align:left;
+        }
+        
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: aqua;
+            box-shadow: none;
+        }
+        
+        .hero-section {
+            background: url('www.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #2515d9;
+            text-align: center;
+        }
+        
+        .hero-section h2 {
+            font-size: 36px;
+        }
+        
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .vehicle-list {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        
+        .vehicle-item {
+            background-color: #b80a0a;
+            border-radius: 5px;
+            padding: 15px;
+            width: 200px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .vehicle-item h3 {
+            font-size: 20px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+        footer p {
+            margin: 0;
+        }
+
+
+        </style>
+
+        <style>
+            /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fcfcfc;
+}
+
+header {
+    background-color: #333;
+    color: #3a30a8;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* Form Section */
+#form-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #122b91;
+    color: rgb(98, 227, 33);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+/* Output Section */
+#output-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #cf1515;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+        </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Welcom to Mohanonda setu Toll-Plaza Chapainawabganj</h1>
+    <div class="search-bar">
+        <input type="text"placeholder="Sesrch....."/>
+        
+        </div>
+    
+
+    <header>
+        <!-- Navigation Bar -->
+        <header>
+            
+
+            <div class="logo">
+                <h1>Toll Plaza</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#toll-info">Toll Info</a></li>
+                    <li><a href="#vehicle-categories">Vehicle Categories</a></li>
+                    <li><a href="#payment">Payment</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        
+        <!-- Main Content -->
+        <section id="home" class="hero-section"></section>
+            <h2>Toll Plaza Management System</h2>
+            <p>Efficient toll collection and management for a seamless journey</p>
+        </section>
+        
+        <section id="toll-info">
+            <h2>Toll Information</h2>
+            <p>Here you can find the details of toll charges, operating hours, and any discounts for frequent users.</p>
+        </section>
+        
+        <section id="vehicle-categories">
+            <h2>Vehicle Categories</h2>
+            <div class="vehicle-list">
+                <div class="vehicle-item">
+                    <h3>Truck</h3>
+                    <p>Toll Fee: 150 TK</p>
+                </div>
+                <div class="vehicle-item">
+                    <h3>Bus</h3>
+                    <p>Toll Fee: 100 TK</p>
+                </div>
+                <div class="vehicle-item">
+                    <h3>Car</h3>
+                    <p>Toll Fee: 50 TK</p>
+                </div>
+                <div class="vehicle-item">
+                    <h3>Motorcycle</h3>
+                    <p>Toll Fee: 10 TK</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="payment">
+            <h2>Payment Methods</h2>
+            <p>You can pay using <strong>credit cards</strong>/<strong>debit cards</strong>, <strong>cash</strong> digital wallets like <strong>PayPal</strong> or <strong>Google Pay</strong>.</p>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any queries, feel free to reach us at <strong>tollplaza@gmail.com</strong> or call us at <strong>(555) 123-4567</strong>.</p>
+        </section>
+
+
+
+        <h1>Toll Plaza Management System</h1>
+    </header>
+    <main>
+        <section id="form-section">
+            <h2>Vehicle Registration</h2>
+            <form id="tollForm">
+                <label for="vehicleNumber">Vehicle Number:</label>
+                <input type="text" id="vehicleNumber" required>
+
+                <label for="vehicleType">Vehicle Type:</label>
+                <select id="vehicleType" required>
+                    <option value="">Select Vehicle Type</option>
+                    <option value="car">Car</option>
+                    <option value="bus">Bus</option>
+                    <option value="truck">Truck</option>
+                    <option value="motorcycle">Motorcycle</option>
+                </select>
+
+                <label for="tollAmount">Toll Amount:</label>
+                <input type="text" id="tollAmount" readonly>
+
+                <button type="button" onclick="calculateToll()">Calculate Toll</button>
+            </form>
+        </section>
+
+        <section id="output-section">
+            <h2>Payment Details</h2>
+            <p id="result"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Toll Plaza Management</p>
+    </footer>
+
+            <link rel="stylesheet" href="toll java.js" class="js">
+        
+</body>
+</html>
