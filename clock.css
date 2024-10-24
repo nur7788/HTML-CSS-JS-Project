@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    
+    background: url('photo.jpg') no-repeat center center/cover;
+    background-color: #282c34;
+    font-family: 'Arial', sans-serif;
+    color: white;
+
+}
+
+.clock-container {
+    text-align: center;
+    
+    color: blue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.time {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.date {
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: 300;
+}
