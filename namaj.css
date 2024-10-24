@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0909d2;
+    color: #fd0303;
+    text-align: center;
+    padding: 50px;
+}
+body h1{
+    color: #0909d2;
+}
+
+.container {
+    background: #f9faf9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+.datetime-section, .temperature-section, .namaz-section {
+    margin: 20px 0;
+}
+
+#time {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#date, #day {
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: bold;
+    color: rgb(12, 247, 63);
+}
+
+.temperature-section h2 {
+    font-size: 28px;
+    color: rgb(155, 8, 165);
+}
+
+.namaz-section h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #0909d2;
+}
+
+.namaz-section ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: justify;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #c8d209;
+}
+
+.namaz-section ul li {
+    margin: 8px 0;
+    width: auto;
+    height: 30px;
+    background: #0b15d6;
+    
+    text-align: center;
+    box-shadow: 0 0 40px blue;
+}
