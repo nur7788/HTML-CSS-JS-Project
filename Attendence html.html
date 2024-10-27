@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management</title>
+    <link rel="stylesheet" href="Attendence css.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Attendance Management System</h1>
+
+        <!-- Form to Add Attendance -->
+        <div class="attendance-form">
+            <h2>Add Attendance</h2>
+            <form id="attendanceForm">
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" required>
+
+                <label for="studentName">Student ID:</label>
+                <input type="text" id="studentID" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+
+                <label for="status">Status:</label>
+                <select id="status">
+                    <option value="Present">Present</option>
+                    <option value="Absent">Absent</option>
+                </select>
+
+                <button type="submit">Add Attendance</button>
+            </form>
+        </div>
+
+        <!-- Section to Display Attendance -->
+        <div class="attendance-list">
+            <h2>Attendance Records</h2>
+            <input type="text" id="search" placeholder="Search by Name" onkeyup="searchAttendance()">
+            <table id="attendanceTable">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Student ID</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Attendance records will be added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="Attendence js.js"></script>
+</body>
+</html>
