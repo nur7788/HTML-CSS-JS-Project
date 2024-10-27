@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management System</title>
+  <link rel="stylesheet" href="LMS.CSS">
+</head>
+<body>
+  <header>
+    <h1>Library Management System</h1>
+    </header>
+
+    <header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#new books">New books</a></li>
+            <li><a href="#book list">Book List</a></li>
+            <li><a href="#payment">Payment</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+
+     <!-- Main Content -->
+     <section id="home" class="hero-section"></section>
+    
+     <h2 style="text-align: center;">Read books yourself and encourage others to read books!!!</h2>
+ </section>
+
+ 
+  
+  
+  <section id="book-section">
+    <h2>Add a Book</h2>
+    <form id="add-book-form">
+      <input type="text" id="book-title" placeholder="Book Title" required>
+      <input type="text" id="book-author" placeholder="Author" required>
+      <button type="submit">Add Book</button>
+    </form>
+    
+    <h2>Available Books</h2>
+    <ul id="book-list"></ul>
+  </section>
+
+  <section id="user-section">
+    <h2>Manage Users</h2>
+    <form id="add-user-form">
+      <input type="text" id="user-name" placeholder="User Name" required>
+      <button type="submit">Add User</button>
+    </form>
+    
+    <h2>Registered Users</h2>
+    <ul id="user-list"></ul>
+  </section>
+
+  <section id="borrow-section">
+    <h2>Borrow a Book</h2>
+    <form id="borrow-book-form">
+      <select id="user-select"></select>
+      <select id="book-select"></select>
+      <button type="submit">Borrow Book</button>
+    </form>
+    
+    <h2>Borrowed Books</h2>
+    <ul id="borrowed-list"></ul>
+  </section>
+
+  <section id="New-books">
+  <h2>New-books</h2>
+  <p>Here you can find the details of toll charges, operating hours, and any discounts for frequent users.</p>
+</section>
+
+<section id="Book-List">
+  <h2>Book List</h2>
+  <div class="vehicle-item">
+      <div class="vehicle-item">
+          <h3>100 page book</h3>
+          <p>Fee: 50 TK</p>
+      </div>
+      <div class="vehicle-item">
+          <h3>300 page book</h3>
+          <p>Fee: 100 TK</p>
+          
+      </div>
+      <div class="vehicle-item">
+          <h3>500 page book</h3>
+          <p>Fee: 150 TK</p>
+      </div>
+      <div class="vehicle-item">
+          <h3>700 page book</h3>
+          <p>Fee: 200 TK</p>
+      </div>
+  </div>
+</section>
+
+<section id="payment">
+  <h2>Payment Methods</h2>
+  <p><strong>Bkash/ </strong><strong>Nagad </strong></p>
+  <a href="https://www.bkash.com/">Click Bkash</a><br>
+  <a href="https://www.nagad.com.bd/">Click Nagad</a><br>
+  
+ 
+  
+
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p><strong>Library/ </strong><strong>E-mail/ </strong><strong>Whats'up</strong></p>
+  <a href=" https://library.kuet.ac.bd/">Libary Support</a><br>
+  <a href="https://mdnoyon631234@gmail.com/">E-mail Support</a><br>
+  <a href="https://web.whatsapp.com/">Whats'up Support</a><br>
+  
+</section>
+
+  
+  <script src="LMS.JS"></script>
+</body>
+</html>

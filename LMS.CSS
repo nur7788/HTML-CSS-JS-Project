@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header h1 {
+    height: 10px;
+    width: justify;
+    background-color: #2254d3;
+    color: white;
+    text-align: center;
+    padding: 1em ;
+  }
+  header {
+    background-color: #842c2c;
+    color: #17d446;
+    padding: 3px ;
+    text-align: end;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0 ;
+    margin: 4px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+
+    color: #f6690c;
+    text-decoration: navy;
+    font-weight: bold;
+    box-shadow: inset;
+    text-align:left;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: aqua;
+    box-shadow: none;
+}
+  
+  section {
+    margin: 2em auto;
+    width: 90%;
+    max-width: 900px;
+  }
+  
+  h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5em;
+  }
+  
+  form {
+    margin-bottom: 1.5em;
+  }
+  
+  input, select, button {
+    padding: 0.5em;
+    margin: 0.5em 0;
+  }
+  
+  button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #a41e1e;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 0.5em;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 0.5em;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  
+
+
+.hero-section h2 {
+    font-size: 36px;
+}
+
+section {
+    padding: 20px;
+    text-align:left;
+   
+}
+
+.vehicle-item {
+    display: flex;
+  
+    margin: 20px 0;
+}
+
+.vehicle-item {
+    background-color: #bc2f2f;
+    border-radius: 5px;
+    padding: 20px;
+    justify-content: space-around;
+
+    background: url('TOLL-PLAZA.jpg') no-repeat center center/cover;
+    width: 850px;
+    box-shadow: 0 0 10px rgba(49, 21, 207, 0.694);
+}
+
+.vehicle-item h3 {
+    font-size: 20px;
+}
+  
