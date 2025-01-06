@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="this is an Ecommerce project for making noyon experss">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="indrx.css">
+</head>
+<body>
+    <!--navbar start -->
+
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+<nav id="menu" class="hidden">
+    <ul class="nav-upper flex-space-around" >
+        <li class="nav_list"><a href="index.html" class="nav_link">Home</a></li>
+        <li class="nav_list"><a href="register.html" class="nav_link">Register</a></li>
+        <li class="nav_list"><a href="login.html" class="nav_link">Login</a></li>
+        <li class="nav_list"><a href="index.html" class="nav_link">Logout</a></li>
+        <li class="nav_list"><a href="contact.html" class="nav_link">Contact</a></li>
+        <li class="nav_list"><a href="profile.html" class="nav_link"><img class="profile-icon" src="profile1.jpg" alt="profile icon"></a></li>
+    </ul>
+          <ul class="nav-lower flex-space-around">
+            <li class="nav_list"><a href="index.html" class="nav_brand nav_link">Noyon Express</a></li>
+            <li class="nav_list"><a href="catr.html" class="nav_link"><span><i class="fa-solid fa-cart-shopping"></i></span> Cart 2 Products - $124.40</a></li>
+
+          </ul> 
+</nav>
+    <!--navbar end -->
+
+    <!--header start -->
+    <header class="header">
+        <div class="banner flex-space-around">
+            <marquee class="banner-title" behavior="" direction="">50% Sales going on</marquee>
+                <div class="features flex-space-around">
+                    <article class="feature flex-center" >
+                        <i class="fa-solid fa-truck feature_icon"></i>
+                        <h3>Shipping within 7 days</h3>
+                    </article>
+
+                    <article class="feature flex-center" >
+                        <i class="fa-brands fa-rocketchat feature_icon"></i>
+                        <h3>Support 24/7</h3>
+                    </article>
+
+                    <article class="feature flex-center" >
+                        <i class="fa-regular fa-credit-card feature_icon"></i>
+                        <h3>Safe Payment</h3>
+                    </article>
+
+                </div>
+        </div>
+    </header>
+    <!--header end -->
+
+    <main class="flex-center">
+        <div class="sidebar">
+            <section class="categories-section">
+                <h3 class="section-title">Catagories</h3>
+                <ul class="list">
+                    <li class="list_item">
+                        <label for="phone">
+                            <input type="checkbox" name="phone" id="phone" value="phone">Phone
+                        </label>
+                    </li>
+
+                    <li class="list_item">
+                        <label for="tablets">
+                            <input type="checkbox" name="tablets" id="tablets" value="tablets">Tablets
+                        </label>
+                    </li>
+
+                    <li class="list_item">
+                        <label for="television">
+                            <input type="checkbox" name="television" id="pelevision" value="television">Television
+                        </label>
+                    </li>
+
+                    <li class="list_item">
+                        <label for="computer">
+                            <input type="checkbox" name="computer" id="computer" value="computer">Computer
+                        </label>
+                    </li>
+
+                    <li class="list_item">
+                        <label for="headphone">
+                            <input type="checkbox" name="headphone" id="headphone" value="headphone">HeadPhone
+                        </label>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="price-section">
+                <h3 class="section-title">Price Range</h3>
+                <ul class="list">
+                    <li class="list_item">
+                        <label for="price1">
+                            <input type="radio" name="price" id="price1" value="[0,20]">$0-20$
+                        </label>
+                    </li>
+
+                    <li class="list_item">
+                        <label for="price2">
+                            <input type="radio" name="price" id="price2" value="[21-50]">$21-50$
+                        </label>
+                    </li>
+
+                    <li class="list_item">
+                        <label for="price3">
+                            <input type="radio" name="price" id="price3" value="[51,100]">$51-100$
+                        </label>
+                    </li>
+
+                    <li class="list_item">
+                        <label for="price4">
+                            <input type="radio" name="price" id="price4" value="[101,500]">$101-500$
+                        </label>
+                    </li>
+
+                    <li class="list_item">
+                        <label for="price5">
+                            <input type="radio" name="price" id="price5" value="[501+]">$501+
+                        </label>
+                    </li> 
+                </ul>
+            </section>
+
+            <section class="shipping-section">
+                <h3 class="section-title">Shipping Option</h3>
+                <ul class="list">
+                    <li class="list_item">
+                        <label for="free">
+                            <input type="radio" name="shipping" id="free" value="free">Free
+                        </label>
+                    </li>
+
+                    <li class="list_item">
+                        <label for="paid">
+                            <input type="radio" name="shipping" id="paid" value="paid">Paid
+                        </label>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="main-content">
+            <section class="actions flex-space-around">
+                <div class="actions_sort">
+                    <label for="sort">Sort By</label>
+                    <select name="sort" id="sort">
+                        <option value="sold">Most sold first</option>
+                        <option value="rating">Most rated first</option>
+                        <option value="price">Cheapest first</option>
+                        <option value="arrival">Newest first</option>
+                        <option value="discount">Biggest discount</option>
+
+                    </select>
+                </div>
+                    <div class="actions_search">
+                        <input type="text" placeholder="search product">
+                        <button class="btn">
+                            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+            </section>
+        <!--product section start -->
+            <section class="products">
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stok</span>
+                        <hr class="hr-drsign">
+                        <span>3 sold </span>
+                    </div>
+                    <img class="product_img" src="product1.jpg" alt="product1">
+                    <div class="product_body">
+                          <h3 class="procuct_body"> Sony V-4 headphone</h3>
+                          <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                          </p>
+                          <p class="product_description">
+                            Lorem ipsum dolor sit amet,
+                             consectetur adipisicing elit.
+                             Dolorum dolorem iure doloribus 
+                             dolore ea voluptatem mollitia non,
+                             voluptates ipsum ... 
+                             <a href="product.html" class="learn-more">Learn More</a>
+                          </p>
+                          <h4 class="product_price">Price: $225.99</h4>
+                          <p class="product-rating">Rating: 4.5/5</p>
+                          <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>2 in stok</span>
+                        <hr class="hr-drsign">
+                        <span>9 sold </span>
+                    </div>
+                    <img class="product_img" src="product2.jpeg" alt="product2">
+                    <div class="product_body">
+                          <h3 class="procuct_body"> Apple smart watch</h3>
+                          <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                          </p>
+                          <p class="product_description">
+                            Lorem ipsum dolor sit amet,
+                             consectetur adipisicing elit.
+                             Dolorum dolorem iure doloribus 
+                             dolore ea voluptatem mollitia non,
+                             voluptates ipsum ... 
+                             <a href="product.html" class="learn-more">Learn More</a>
+                          </p>
+                          <h4 class="product_price">Price: $425.99</h4>
+                          <p class="product-rating">Rating: 4.2/5</p>
+                          <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>3 in stok</span>
+                        <hr class="hr-drsign">
+                        <span>12 sold </span>
+                    </div>
+                    <img class="product_img" src="product4.png" alt="product3">
+                    <div class="product_body">
+                          <h3 class="procuct_body">Nike Suge</h3>
+                          <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                          </p>
+                          <p class="product_description">
+                            Lorem ipsum dolor sit amet,
+                             consectetur adipisicing elit.
+                             Dolorum dolorem iure doloribus 
+                             dolore ea voluptatem mollitia non,
+                             voluptates ipsum ... 
+                             <a href="product.html" class="learn-more">Learn More</a>
+                          </p>
+                          <h4 class="product_price">Price: $25.99</h4>
+                          <p class="product-rating">Rating: 3.8/5</p>
+                          <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stok</span>
+                        <hr class="hr-drsign">
+                        <span>3 sold </span>
+                    </div>
+                    <img class="product_img" src="product5.webp" alt="product1">
+                    <div class="product_body">
+                          <h3 class="procuct_body"> AirPods</h3>
+                          <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                          </p>
+                          <p class="product_description">
+                            Lorem ipsum dolor sit amet,
+                             consectetur adipisicing elit.
+                             Dolorum dolorem iure doloribus 
+                             dolore ea voluptatem mollitia non,
+                             voluptates ipsum ... 
+                             <a href="product.html" class="learn-more">Learn More</a>
+                          </p>
+                          <h4 class="product_price">Price: $225.99</h4>
+                          <p class="product-rating">Rating: 4.5/5</p>
+                          <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stok</span>
+                        <hr class="hr-drsign">
+                        <span>3 sold </span>
+                    </div>
+                    <img class="product_img" src="product6.jpg" alt="product1">
+                    <div class="product_body">
+                          <h3 class="procuct_body"> Wearless Headphone</h3>
+                          <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                          </p>
+                          <p class="product_description">
+                            Lorem ipsum dolor sit amet,
+                             consectetur adipisicing elit.
+                             Dolorum dolorem iure doloribus 
+                             dolore ea voluptatem mollitia non,
+                             voluptates ipsum ... 
+                             <a href="product.html" class="learn-more">Learn More</a>
+                          </p>
+                          <h4 class="product_price">Price: $225.99</h4>
+                          <p class="product-rating">Rating: 4.5/5</p>
+                          <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stok</span>
+                        <hr class="hr-drsign">
+                        <span>3 sold </span>
+                    </div>
+                    <img class="product_img" src="product1.jpg" alt="product1">
+                    <div class="product_body">
+                          <h3 class="procuct_body"> Sony V-4 headphone</h3>
+                          <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                          </p>
+                          <p class="product_description">
+                            Lorem ipsum dolor sit amet,
+                             consectetur adipisicing elit.
+                             Dolorum dolorem iure doloribus 
+                             dolore ea voluptatem mollitia non,
+                             voluptates ipsum ... 
+                             <a href="product.html" class="learn-more">Learn More</a>
+                          </p>
+                          <h4 class="product_price">Price: $225.99</h4>
+                          <p class="product-rating">Rating: 4.5/5</p>
+                          <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stok</span>
+                        <hr class="hr-drsign">
+                        <span>3 sold </span>
+                    </div>
+                    <img class="product_img" src="product1.jpg" alt="product1">
+                    <div class="product_body">
+                          <h3 class="procuct_body"> Sony V-4 headphone</h3>
+                          <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                          </p>
+                          <p class="product_description"> 
+                            Lorem ipsum dolor sit amet,
+                             consectetur adipisicing elit.
+                             Dolorum dolorem iure doloribus 
+                             dolore ea voluptatem mollitia non,
+                             voluptates ipsum ... 
+                             <a href="product.html" class="learn-more">Learn More</a>
+                          </p>
+                          <h4 class="product_price">Price: $225.99</h4>
+                          <p class="product-rating">Rating: 4.5/5</p>
+                          <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+            </section>
+
+            <div class="pagination">
+                <button class="btn pagination_btn">
+                    <i class="fas fa-less-then"><</i>
+                </button>
+                <button class="btn pagination_btn">2</button>
+                <button class="btn pagination_btn">3</button>
+                <button class="btn pagination_btn">4</button>
+                <button class="btn pagination_btn">5</button>
+                <button class="btn pagination_btn">6</button>
+                <button class="btn pagination_btn">7</button>
+                <button class="btn pagination_btn">8</button>
+                <button class="btn pagination_btn">9</button>
+                <button class="btn pagination_btn">10</button>
+                <button class="btn pagination_btn">...</button>
+                <button class="btn pagination_btn">50</button>
+                <button class="btn pagination_btn">
+                    <i class="fas fa-greater-then">></i>
+                </button>
+
+            </div>
+
+        <!--product section end -->
+
+
+
+        </div>
+    </main>
+<!--footer start -->
+        <footer class="footer flex-space-around">
+            <div class="flex-space-around ">
+                <label for="subscribe">Subscribe to Newsletter</label>
+                <input type="email" name="subscribe" id="subscribe" placeholder="Your Email Addess">
+                <button class="btn btn-subscribr">subscribr</button>
+            </div>
+            <div>
+                <p>&copy; Copyright 2025 Noyon Express. All right  </p>
+            </div>
+        </footer>
+
+<!--footer end -->
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="this is an Ecommerce project for making noyon experss">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="indrx.css">
+</head>
+<body>
+    <!--navbar start -->
+   
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+<nav id="menu" class="hidden">
+    <ul class="nav-upper flex-space-around" >
+        <li class="nav_list"><a href="index.html" class="nav_link">Home</a></li>
+        <li class="nav_list"><a href="register.html" class="nav_link">Register</a></li>
+        <li class="nav_list"><a href="login.html" class="nav_link">Login</a></li>
+        <li class="nav_list"><a href="index.html" class="nav_link">Logout</a></li>
+        <li class="nav_list"><a href="contact.html" class="nav_link">Contact</a></li>
+        <li class="nav_list"><a href="profile.html" class="nav_link"><img class="profile-icon" src="profile1.jpg" alt="profile icon"></a></li>
+    </ul>
+          <ul class="nav-lower flex-space-around">
+            <li class="nav_list"><a href="/index.html" class="nav_brand nav_link">Noyon Express</a></li>
+            <li class="nav_list"><a href="/catr.html" class="nav_link"><span><i class="fa-solid fa-cart-shopping"></i></span> Cart 2 Products - $124.40</a></li>
+
+          </ul> 
+</nav>
+    <!--navbar end -->
+    <main>
+        <section class="contact-section">
+            <h2 class="section-title flex-center"> Contact Us</h2>
+            <div class="contact-conatiner flex-center">
+                <form action="" class="from card">
+                    <div class="from-control flex-center">
+                        <label for="name">Name</label><input type="text" id="name" required autocomplete="name">
+                    </div>
+                    <div class="from-control flex-center">
+                        <label for="email">Email</label><input type="email" id="email" required autocomplete="email">
+                    </div>
+                    <div class="from-control flex-center">
+                        <label for="message">Message</label><textarea name="message" id="message"></textarea>
+                    </div>
+                    <div class="from-control flex-center from-btn-field">
+                     <button type="submit" class="btn contact-btn">submit</button>   
+                    </div>
+                </form>
+                <div class="contact-address">
+                    <address>
+                        <h4>Address:</h4>
+                        <p>244 Sapahar, Naogaon</p>
+                        <p>Dhaka, Bangladesh</p><br>
+                        <span>Call:</span><a href="tel:+01749535688">+8801747535688</a>
+                    </address>
+                    <iframe class="contact_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2697.055930412998!2d88.25131307378479!3d24.604244255465087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fbb6adce9b8e7f%3A0x9e48aed7c8c2e606!2sChapainawabganj%20Polytechnic%20Institute!5e1!3m2!1shi!2sbd!4v1736097704847!5m2!1shi!2sbd"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+<!--footer start -->
+        <footer class="footer flex-space-around">
+            <div class="flex-space-around ">
+                <label for="subscribe">Subscribe to Newsletter</label>
+                <input type="email" name="subscribe" id="subscribe" placeholder="Your Email Addess">
+                <button class="btn btn-subscribr">subscribr</button>
+            </div>
+            <div>
+                <p>&copy; Copyright 2025 Noyon Express. All right  </p>
+            </div>
+        </footer>
+
+<!--footer end -->
+<script src="index.js"></script>
+
+</body>
+</html>
